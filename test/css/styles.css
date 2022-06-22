@@ -39,9 +39,8 @@ body {
 }
 .top_text {
     position: fixed;
-    width: 100%;
-    text-align: center;
     z-index: 1000;
+    margin-left: 49%;
 }
 .frame, .video {
     margin-top: 282px;
