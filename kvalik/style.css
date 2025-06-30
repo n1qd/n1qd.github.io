@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  min-height: 100vh;
+  background: #fff;
+  box-sizing: border-box;
+}
+#content-area {
+  white-space: pre-wrap;
+  font-size: 1.08em;
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 0 0 0;
+  }
+  #toc {
+    display: none;
+  }
+  .content {
+    padding: 12px;
+  }
+} 
