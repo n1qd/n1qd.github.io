@@ -13,6 +13,19 @@
       font-size: 1em;
       line-height: 1.6;
     }
+    .img-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .img-row img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px #0001;
+      max-height: 220px;
+    }
     pre {
       white-space: pre-wrap;
       word-break: break-word;
@@ -20,6 +33,10 @@
   </style>
 </head>
 <body>
+<div class="img-row">
+  <img src="1.jpg" alt="Фото 1">
+  <img src="2.jpg" alt="Фото 2">
+</div>
 <pre>
 backup:
 tar cvpzf backup.tgz –exclude=/proc –exclude=/lost+found –exclude=/backup.tgz –exclude=/mnt –exclude=/sys –exclude=/web /
